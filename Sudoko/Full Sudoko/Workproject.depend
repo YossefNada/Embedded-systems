@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1662482614 source:d:\embedded systems software\workproject\functions.c
+
+1663176552 source:d:\embedded systems software\workproject\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+	<windows.h>
+
+1662982558 source:d:\embedded systems software\workproject\arrayfunction.c
+
+1661797331 source:d:\embedded systems software\workproject\newfunctions.c
+
+1662982558 source:d:\embedded systems software\full sudoko\arrayfunction.c
+
+1662482614 source:d:\embedded systems software\full sudoko\functions.c
+
+1661797331 source:d:\embedded systems software\full sudoko\newfunctions.c
+
