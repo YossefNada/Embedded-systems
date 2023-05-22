@@ -1,0 +1,84 @@
+
+*****************************************************Yossef Nada**************************************************************
+/*
+** This is a full Database for school students
+*************************************************
+** It will allow you to 1- add student
+                        2- Edit student
+                        3- print student
+                        4- delete student
+                        5- print school
+                        6- call student
+*************************************************
+1- Adding a student, we will create an array element add the data into it
+*************************************************
+2- Editing would simply write on the array element
+*************************************************
+3- Printing simply would print the data
+*************************************************
+4- Deleting the student will make the whole array element shift because the school IDs would shift
+*************************************************
+5- Print the whole school array
+*************************************************
+6- Call the student parent or him after we have provided phone numbers
+
+
+     *********
+>>>>>*Remarks*<<<<<<
+     *********
+
+ Data Inside
+
+    1- Names
+    2- Age
+    3- Phone number
+    4- parents data
+    5- siblings data
+    6- subjects score alongside total score
+
+
+
+****** As for the subjects we will create constant strings in RO data and the values will be stored in an array of subjects with this order
+                  maths            physics          chemistry           mechanics        programming
+
+
+***DON'T FORGET COLORING<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+**CAREFULL**
+>when you put a pointer to struct in another pointer take care that in the initialization you will put an address in the place of the pointer that points to another struct that has already been initialized
+>when you add a new student, you will allocate a memory space in the heap and put it's address in the struct school
+*/
+
+
+
+
+
+
+**********************************************************Very Important**************************************************
+
+>>> I met a slight hiccup in the code, at first when i identified level as char in the struct type, when i scnaf the gender then the level
+the gender gets overwritten from the memory this is because scanf("%d",for a char variable) removes the the 3 bytes above it, that was the bug
+but then defined level as int (4 bytes) it worked just  fine because the allocated 4 bytes of the memory for it.
+
+
+
+>>> careful because the same error will happen with level since your scanning grades after it with %d and the grade elements are characters that's
+why i changed them to integers, i could have used %c though but it crashes a lot because of enter and space keys
+
+
+
+
+
+
+
+
+>>> Last but not least we are going to save the array in a binary file and then retrieve data from it once the program runs again
+
+
+
+>>> Very important
+
+==> I tried using the malloc function to dynamically allocate space for the struct of siblings (in the heap) but the problem is once the
+program is closed, the operating system cleans up the heap so it removes all the data previously allocated giving me errors of access (like dangled pointer)
+so i had to choose an array of 3 siblings utmost to overcome this dilemma.
