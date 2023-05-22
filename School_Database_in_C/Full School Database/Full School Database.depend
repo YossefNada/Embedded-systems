@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1663859693 source:d:\embedded systems software\full school database\functions.c
+	<stdio.h>
+	<stdlib.h>
+	"Head.h"
+	<windows.h>
+
+1663859314 d:\embedded systems software\full school database\head.h
+	<stdlib.h>
+	<stdio.h>
+	<dos.h>
+	<time.h>
+	<stdbool.h>
+	<string.h>
+
+1663860698 source:d:\embedded systems software\full school database\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Head.h"
+	<windows.h>
+	<stdbool.h>
+	<string.h>
+
